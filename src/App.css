@@ -1,0 +1,119 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 900px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+.header {
+  padding: 32px 0 16px;
+  text-align: left;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  border-bottom: 1px solid var(--border);
+}
+
+.tab {
+  font: inherit;
+  font-size: 15px;
+  color: var(--text);
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 10px 14px;
+  cursor: pointer;
+}
+
+.tab:hover {
+  color: var(--text-h);
+}
+
+.tab-active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+  font-weight: 500;
+}
+
+.content {
+  text-align: left;
+  padding: 28px 0 60px;
+}
+
+.content-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.content-header h2 {
+  margin: 0;
+}
+
+.copy-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  font: inherit;
+  font-size: 13px;
+  color: var(--text);
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.copy-button:hover {
+  color: var(--text-h);
+  border-color: var(--accent-border);
+}
+
+.copy-icon {
+  width: 14px;
+  height: 14px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.content h3 {
+  font-family: var(--heading);
+  font-size: 17px;
+  color: var(--text-h);
+  margin: 24px 0 8px;
+}
+
+.content h3:first-child {
+  margin-top: 0;
+}
+
+.content p {
+  margin: 0 0 12px;
+}
+
+.content ul {
+  margin: 0 0 12px;
+  padding-left: 20px;
+}
+
+.content li {
+  margin: 0 0 8px;
+  line-height: 145%;
+}
+
+.content li:last-child {
+  margin-bottom: 0;
+}
